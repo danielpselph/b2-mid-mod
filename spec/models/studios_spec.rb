@@ -6,9 +6,9 @@ RSpec.describe Studio, type: :model do
         it {should validate_presence_of :movies}
     end 
 
-    # describe 'relationships' do
-    #     it {should have_many :movies}
-    # end
+    describe 'relationships' do
+        it {should have_many :movies}
+    end
 end
 
 # Story 1

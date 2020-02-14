@@ -1,5 +1,9 @@
 require 'rails_helper'
 
-# RSpec.describe Movie, type: :model do 
-#     describe 'relationships'
-# end
+RSpec.describe Movie, type: :model do 
+    describe 'validations' do 
+        it {should validate_presence_of :name}
+        it {should validate_presence_of :year}
+        it {should validate_presence_of :genre}
+    end
+end

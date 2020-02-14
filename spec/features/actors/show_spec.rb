@@ -8,7 +8,7 @@ RSpec.describe "As a user" do
 
         it "I see their name, age and list of names of all movies they are in" do 
 
-            visit '/actors'
+            visit "/actors/#{@actor1.id}"
 
             expect(page).to have_content(@actor1.name)
             expect(page).to have_content(@actor1.age)

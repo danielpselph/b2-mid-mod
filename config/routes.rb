@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 get '/', to: 'studios#index'
 
 get 'studios', to: 'studios#index'
-get 'actors', to: 'actors#show'
+get 'actors/:actor_id', to: 'actors#show'
 
 
 

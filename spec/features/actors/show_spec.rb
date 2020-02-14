@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe "As a user" do
-    describe "When I visit an actors show page"
-        before each: do
+    describe "When I visit an actors show page" do
+        before :each do
             @actor1 = Actor.create(name: "Tom Cruise", age: "7")
         end    
 

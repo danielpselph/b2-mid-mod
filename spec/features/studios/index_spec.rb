@@ -7,7 +7,7 @@ RSpec.describe "As a user" do
             @studio2 = Studio.create(name: "Paramount", movies: "apple")
         end
 
-        it "I see a list of all the movie studios"
+        it "I see a list of all the movie studios" do
 
             visit '/studios'
 

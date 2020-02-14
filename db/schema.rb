@@ -31,4 +31,6 @@ ActiveRecord::Schema.define(version: 20200214175452) do
     t.string "movies"
   end
 
+  add_foreign_key "movies", "studios"
+
 end

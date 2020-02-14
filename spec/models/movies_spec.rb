@@ -6,4 +6,8 @@ RSpec.describe Movie, type: :model do
         it {should validate_presence_of :year}
         it {should validate_presence_of :genre}
     end
+
+    describe 'relationships' do
+        it {should belong_to :studio}
+    end
 end

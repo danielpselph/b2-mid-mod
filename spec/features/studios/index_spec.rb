@@ -12,7 +12,10 @@ RSpec.describe "As a user" do
             visit '/studios'
 
             expect(page).to have_content(@studio1.name)
+            expect(page).to have_content(@studio1.movies)
             expect(page).to have_content(@studio2.name)
+            expect(page).to have_content(@studio2.movies)
+
         end
     end
 end
